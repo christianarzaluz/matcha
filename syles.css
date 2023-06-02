@@ -18,20 +18,25 @@ button {
     background-color: #025157;
 }
 .header {
+    display: flex;
+    justify-content: space-evenly;
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 0;
-    height: 45px;
+    min-height: 45px;
     font-family: sans-serif;
   }
   .logo > img {
-    width: 100%;
+    max-width: 100%;
   }
   .navbar {
-    width: 70%;
-    text-align: center;
-    color: #025157;
+    width: 50%;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    list-style: none;
   }
   .menu-item {
     display: inline;
@@ -40,6 +45,8 @@ button {
   }
   .actions {
     width: 15%;
+    display: flex;
+    align-items: center;
     text-align: right;
     font-size: 14px;  
   }
@@ -56,6 +63,7 @@ button {
     padding-bottom: 12px;
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
   }
   .main {
     margin-top: 140px;
